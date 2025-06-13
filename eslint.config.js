@@ -2,6 +2,10 @@ import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import eslintConfigPrettier from 'eslint-config-prettier'
+
+const browserGlobals = { ...globals.browser }
+delete browserGlobals['AudioWorkletGlobalScope ']
 
 export default [
   { ignores: ['dist'] },
@@ -9,7 +13,7 @@ export default [
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: browserGlobals,
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
@@ -30,4 +34,5 @@ export default [
       ],
     },
   },
+  eslintConfigPrettier,
 ]
