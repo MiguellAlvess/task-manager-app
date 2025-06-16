@@ -74,7 +74,10 @@ const Tasks = () => {
             Nova tarefa
           </Button>
 
-          <AddTaskDialog isOpen={addTaskDialogIsOpen} />
+          <AddTaskDialog
+            isOpen={addTaskDialogIsOpen}
+            handleClose={() => setAddTaskDialogIsOpen(false)}
+          />
         </div>
       </div>
 
