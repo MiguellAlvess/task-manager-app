@@ -41,20 +41,6 @@
       "description": "Assistir um filme",
       "time": "evening",
       "status": "not_started"
-    },
-    {
-      "id": "3a233022-56b1-4e3f-9116-790e3387522e",
-      "title": "teste",
-      "description": "sad",
-      "time": "morning",
-      "status": "not_started"
-    },
-    {
-      "id": "299d4f42-9aed-4f97-b3c3-9ec6016cccca",
-      "title": "teste",
-      "description": "123313",
-      "time": "morning",
-      "status": "not_started"
     }
   ]
 }
