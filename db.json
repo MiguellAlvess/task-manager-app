@@ -1,45 +1,24 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "title": "Academia",
-      "description": "Treinar costas",
+      "id": "2e6e9464-a396-41ac-a1f2-9a8732eb8216",
+      "title": "Teste",
+      "description": "testando",
       "time": "morning",
-      "status": "done"
-    },
-    {
-      "id": "2",
-      "title": "Água",
-      "description": "Beber 3L de água",
-      "time": "morning",
-      "status": "done"
-    },
-    {
-      "id": "3",
-      "title": "Faculdade",
-      "description": "Estudar para a prova da faculdade",
-      "time": "afternoon",
-      "status": "in_progress"
-    },
-    {
-      "id": "4",
-      "title": "Estudar",
-      "description": "Revisar conteúdos da matéria",
-      "time": "afternoon",
-      "status": "in_progress"
-    },
-    {
-      "id": "5",
-      "title": "Compras",
-      "description": "Fazer compras no shopping",
-      "time": "evening",
       "status": "not_started"
     },
     {
-      "id": "6",
-      "title": "Descansar",
-      "description": "Assistir um filme",
-      "time": "evening",
+      "id": "4a01fc13-4383-4650-a31d-376cd14ad48c",
+      "title": "Ir aa rua",
+      "description": "teste",
+      "time": "afternoon",
+      "status": "not_started"
+    },
+    {
+      "id": "b228ff94-d93a-41a4-bfb0-afb90d00390e",
+      "title": "teste",
+      "description": "sda",
+      "time": "morning",
       "status": "not_started"
     }
   ]
