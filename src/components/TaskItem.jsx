@@ -60,7 +60,7 @@ const TaskItem = ({ task, handleCheckboxClick, onDeleteSuccess }) => {
           disabled={deleteTaskIsLoading}
         >
           {deleteTaskIsLoading ? (
-            <LoaderIcon className="animate-spin text-brand-text-gray" />
+            <LoaderIcon className="animate-spin text-brand-process" />
           ) : (
             <TrashIcon className="text-brand-text-gray" />
           )}
