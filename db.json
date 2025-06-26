@@ -1,20 +1,6 @@
 {
   "tasks": [
     {
-      "id": "48c99403-3b95-450b-92a1-864bdb83b1cc",
-      "title": "Ir a academia",
-      "time": "morning",
-      "description": "deste",
-      "status": "not_started"
-    },
-    {
-      "id": "8715f935-bde2-4a0e-8907-8f24c466eef8",
-      "title": "Estudar",
-      "time": "morning",
-      "description": "Teste",
-      "status": "not_started"
-    },
-    {
       "id": "7e1085f6-73f4-4c52-95ce-8c833459f5a3",
       "title": "Dormir",
       "time": "afternoon",
@@ -36,24 +22,17 @@
       "status": "not_started"
     },
     {
-      "id": "83559758-1159-43ce-95fb-d28e5da36b56",
+      "id": "d4105d04-99b0-4ef4-87f0-caca69edaf78",
       "title": "teste",
       "time": "morning",
       "description": "teste",
       "status": "not_started"
     },
     {
-      "id": "1a539646-9dd6-4121-a716-ce14d5856b0f",
-      "title": "trst",
+      "id": "1c47ca7f-3862-4132-a6e2-ab5c6b0e67b2",
+      "title": "Estdar",
       "time": "morning",
-      "description": "teste",
-      "status": "not_started"
-    },
-    {
-      "id": "c614f0c3-94fe-40e0-97cd-aac7c7e91f23",
-      "title": "teste",
-      "time": "morning",
-      "description": "teste",
+      "description": "test",
       "status": "not_started"
     }
   ]

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { toast } from 'sonner'
 
 import { CheckIcon, DetailsIcon, LoaderIcon, TrashIcon } from '../assets/icons'
@@ -25,7 +26,7 @@ const TaskItem = ({ task, handleCheckboxClick, onDeleteSuccess }) => {
       return 'bg-brand-primary text-brand-primary'
     }
     if (task.status === 'in_progress') {
-      return 'bg-brand-process text-brand-process'
+      return 'bg-brand-process text-brand-white'
     }
     if (task.status === 'not_started') {
       return 'bg-brand-dark-blue bg-opacity-10 text-brand-dark-blue'
@@ -65,9 +66,9 @@ const TaskItem = ({ task, handleCheckboxClick, onDeleteSuccess }) => {
             <TrashIcon className="text-brand-text-gray" />
           )}
         </Button>
-        <a href="#" className="transition hover:opacity-75">
+        <Link to={`/task/${task.id}`}>
           <DetailsIcon className="text-brand-text-gray" />
-        </a>
+        </Link>
       </div>
     </div>
   )
