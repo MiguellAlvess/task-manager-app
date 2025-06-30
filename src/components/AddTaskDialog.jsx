@@ -1,10 +1,12 @@
 import './AddTaskDialog.css'
 
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import PropTypes from 'prop-types'
 import { useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { useForm } from 'react-hook-form'
 import { CSSTransition } from 'react-transition-group'
+import { toast } from 'sonner'
 import { v4 } from 'uuid'
 
 import { LoaderIcon } from '../assets/icons'
@@ -12,12 +14,21 @@ import Button from './Button'
 import Input from './Input'
 import TimeSelect from './TimeSelect'
 
-const AddTaskDialog = ({
-  isOpen,
-  handleClose,
-  onSubmitSuccess,
-  onSubmitError,
-}) => {
+const AddTaskDialog = ({ isOpen, handleClose }) => {
+  const queryClient = useQueryClient()
+  const { mutate } = useMutation({
+    mutationKey: 'add-task',
+    mutationFn: async (task) => {
+      const response = await fetch('http://localhost:3000/tasks', {
+        method: 'POST',
+        body: JSON.stringify(task),
+      })
+      if (!response.ok) {
+        throw new Error()
+      }
+      return response.json()
+    },
+  })
   const {
     register,
     formState: { errors, isSubmitting },
@@ -32,32 +43,29 @@ const AddTaskDialog = ({
   const nodeRef = useRef()
 
   const handleSaveClick = async (data) => {
-    const title = data.title
-    const description = data.description
-    const time = data.time
-
     const task = {
       id: v4(),
-      title: title.trim(),
-      time,
-      description: description.trim(),
+      title: data.title.trim(),
+      time: data.time,
+      description: data.description.trim(),
       status: 'not_started',
     }
 
-    const response = await fetch('http://localhost:3000/tasks', {
-      method: 'POST',
-      body: JSON.stringify(task),
-    })
-    if (!response.ok) {
-      return onSubmitError()
-    }
-
-    onSubmitSuccess(task)
-    handleClose()
-    reset({
-      title: '',
-      description: '',
-      time: 'morning',
+    mutate(task, {
+      onSuccess: () => {
+        queryClient.setQueryData('tasks', (currentTasks) => {
+          return [...currentTasks, task]
+        })
+        handleClose()
+        reset({
+          title: '',
+          description: '',
+          time: 'morning',
+        })
+      },
+      onError: () => {
+        toast.error('Erro ao salvar a tarefa')
+      },
     })
   }
 

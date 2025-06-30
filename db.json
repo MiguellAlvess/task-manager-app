@@ -1,11 +1,3 @@
 {
-  "tasks": [
-    {
-      "id": "e6ad6c98-81e8-4e72-ba5e-91e0c3e684c6",
-      "title": "   dasd",
-      "time": "morning",
-      "description": "dasdd",
-      "status": "not_started"
-    }
-  ]
+  "tasks": []
 }
