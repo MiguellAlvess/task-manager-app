@@ -9,7 +9,7 @@ import {
   SunIcon,
   TrashIcon,
 } from '../assets/icons'
-import { useGetTasks } from '../hooks/data/use-gate-taks'
+import { useGetTasks } from '../hooks/data/use-get-taks'
 import AddTaskDialog from './AddTaskDialog'
 import Button from './Button'
 import TaskItem from './TaskItem'
