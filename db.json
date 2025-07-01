@@ -5,7 +5,7 @@
       "title": "Ir a academia",
       "time": "morning",
       "description": "dasdada",
-      "status": "not_started"
+      "status": "done"
     },
     {
       "id": "c91e0393-8644-4809-ba5a-e488ddd7040a",
@@ -19,7 +19,7 @@
       "title": "Ir ao shopping",
       "time": "afternoon",
       "description": "dads",
-      "status": "not_started"
+      "status": "in_progress"
     }
   ]
 }
