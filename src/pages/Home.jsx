@@ -4,49 +4,44 @@ import {
   Tasks2Icon,
   TasksIcon,
 } from '../assets/icons'
-import DashboardCard from '../components/DashboardCard'
+import DashboardCards from '../components/DashboardCards'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
+import TaskItem from '../components/TaskItem'
 import { useGetTasks } from '../hooks/data/use-get-taks'
 
-const Home = () => {
+const HomePage = () => {
   const { data: tasks } = useGetTasks()
-
-  const inProgressTasks = tasks?.filter(
-    (task) => task.status === 'in_progress'
-  ).length
-  const completedTasks = tasks?.filter((task) => task.status === 'done').length
-
   return (
     <div className="flex">
       <Sidebar />
       <div className="w-full space-y-4 px-8 py-16">
         <Header subtitle="Home" title="Dashboard" />
-        <div className="grid grid-cols-4 gap-9">
-          <DashboardCard
-            icon={<Tasks2Icon />}
-            mainText={tasks?.length}
-            secondaryText="Tarefas disponiveis"
-          />
-          <DashboardCard
-            icon={<TasksIcon />}
-            mainText={completedTasks}
-            secondaryText="Tarefas concluídas"
-          />
-          <DashboardCard
-            icon={<LoaderIcon />}
-            mainText={inProgressTasks}
-            secondaryText="Tarefas em andamento"
-          />
-          <DashboardCard
-            icon={<GlassWaterIcon />}
-            mainText="5"
-            secondaryText="Água"
-          />
+        <DashboardCards />
+        <div className="grid grid-cols-[1.5fr,1fr] gap-6">
+          <div className="space-y-6 rounded-[10px] bg-brand-white p-6">
+            <div>
+              <h3 className="text-xl font-semibold">Tarefas</h3>
+              <span className="text-sm text-brand-dark-gray">
+                Resumo das tarefas disponíveis
+              </span>
+            </div>
+            <div className="space-y-3">
+              {tasks?.map((task) => (
+                <TaskItem task={task} key={task.id} />
+              ))}
+            </div>
+          </div>
+          <div className="flex items-center justify-center space-y-6 rounded-[10px] bg-brand-white p-6">
+            <span className="text-brand-dark-gray">
+              O sucesso do seu dia é construído tarefa por tarefa — termine com
+              orgulho e celebre cada conquista!
+            </span>
+          </div>
         </div>
       </div>
     </div>
   )
 }
 
-export default Home
+export default HomePage

@@ -29,7 +29,7 @@ const TaskItem = ({ task }) => {
       return 'bg-brand-process text-brand-white'
     }
     if (task.status === 'not_started') {
-      return 'bg-brand-dark-blue bg-opacity-10 text-brand-dark-blue'
+      return 'bg-brand-dark-blue bg-opacity-5 text-brand-dark-blue'
     }
   }
   const getNewStatus = () => {
