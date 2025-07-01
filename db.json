@@ -1,25 +1,25 @@
 {
   "tasks": [
     {
-      "id": "634cc44a-f445-4562-9dcd-3c08bc978263",
-      "title": "Ir a academia",
-      "time": "morning",
-      "description": "dasdada",
-      "status": "done"
-    },
-    {
       "id": "c91e0393-8644-4809-ba5a-e488ddd7040a",
       "title": "Domirr",
       "time": "evening",
       "description": "Dsaadadadad",
-      "status": "not_started"
+      "status": "in_progress"
     },
     {
       "id": "1c552f24-dd11-4a02-aa8f-e2b3aac1262a",
       "title": "Ir ao shopping",
       "time": "afternoon",
       "description": "dads",
-      "status": "in_progress"
+      "status": "not_started"
+    },
+    {
+      "id": "0cef4c32-e371-4ef4-99f6-1bdff5fc3b61",
+      "title": "sda",
+      "time": "morning",
+      "description": "dsa",
+      "status": "done"
     }
   ]
 }
