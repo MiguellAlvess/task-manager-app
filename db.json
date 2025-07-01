@@ -5,20 +5,20 @@
       "title": "Domirr",
       "time": "evening",
       "description": "Dsaadadadad",
-      "status": "in_progress"
+      "status": "not_started"
     },
     {
       "id": "1c552f24-dd11-4a02-aa8f-e2b3aac1262a",
       "title": "Ir ao shopping",
       "time": "afternoon",
       "description": "dads",
-      "status": "not_started"
+      "status": "in_progress"
     },
     {
-      "id": "0cef4c32-e371-4ef4-99f6-1bdff5fc3b61",
-      "title": "sda",
+      "id": "7a2d7390-0327-4837-ace6-88e9020b9f91",
+      "title": "Ir treinar",
       "time": "morning",
-      "description": "dsa",
+      "description": "sad",
       "status": "done"
     }
   ]
