@@ -2,9 +2,9 @@
   "tasks": [
     {
       "id": "c91e0393-8644-4809-ba5a-e488ddd7040a",
-      "title": "Domirr",
+      "title": "Domir",
       "time": "evening",
-      "description": "Dsaadadadad",
+      "description": "Dormir de 21h",
       "status": "not_started"
     },
     {
@@ -19,6 +19,27 @@
       "title": "Ir treinar",
       "time": "morning",
       "description": "sad",
+      "status": "done"
+    },
+    {
+      "id": "44fbde5e-b85b-45c6-b73d-3041f798f40b",
+      "title": "Levar o cachorro para passear",
+      "time": "morning",
+      "description": "Levar Wally para passear de 8h",
+      "status": "done"
+    },
+    {
+      "id": "a1833bb5-9990-490c-9050-071bdeef3c91",
+      "title": "Assistir TV",
+      "time": "evening",
+      "description": "Assistir Game of Thrones",
+      "status": "not_started"
+    },
+    {
+      "id": "0c624333-816c-43c4-92e2-d6af1661327e",
+      "title": "Estudar",
+      "time": "afternoon",
+      "description": "Estudar next.js",
       "status": "done"
     }
   ]

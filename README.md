@@ -1,12 +1,26 @@
-# React + Vite
+# Task Manager App 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sobre o projeto
 
-Currently, two official plugins are available:
+Este é um simples gerenciador de tarefas desenvolvido com foco em aplicar boas práticas de desenvolvimento frontend moderno. A aplicação foi criada com o objetivo de exercitar conceitos como componentização, gerenciamento de estado e estilização com TailwindCSS. Apesar da simplicidade, o projeto busca refletir uma estrutura limpa, reutilizável e organizada, utilizando ferramentas e bibliotecas amplamente adotadas no ecossistema React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- **React**
+- **React Router DOM**
+- **React Hook Form**
+- **React Query (@tanstack/react-query)**
+- **TailwindCSS** + Tailwind Variants
+- **Axios**
+- **React Transition Group**
+- **Sonner (toast)**
+- **Vite**
+- **ESLint** + **Prettier** + **lint-staged** + **Husky**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Visão geral
+
+![Image](https://github.com/user-attachments/assets/543be53e-2fd3-40bf-9b52-5666224ba22d)
+
+![Image](https://github.com/user-attachments/assets/aa010dff-152c-455c-bb23-6da5af65bf84)
+
+![Image](https://github.com/user-attachments/assets/89e3d261-552a-4b90-81d7-9534cd111911)
