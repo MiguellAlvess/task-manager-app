@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Este é um simples gerenciador de tarefas desenvolvido com foco em aplicar boas práticas de desenvolvimento frontend moderno. A aplicação foi criada com o objetivo de exercitar conceitos como componentização, gerenciamento de estado e estilização com TailwindCSS. Apesar da simplicidade, o projeto busca refletir uma estrutura limpa, reutilizável e organizada, utilizando ferramentas e bibliotecas amplamente adotadas no ecossistema React.
+Gerenciador de tarefas simples desenvolvido com foco em aplicar boas práticas de desenvolvimento frontend moderno. A aplicação foi criada com o objetivo de exercitar conceitos como componentização, gerenciamento de estado e estilização com TailwindCSS. Apesar da simplicidade, o projeto busca refletir uma estrutura limpa, reutilizável e organizada, utilizando ferramentas e bibliotecas amplamente adotadas no ecossistema React.
 
 ## Tecnologias utilizadas
 
